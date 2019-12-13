@@ -1,7 +1,6 @@
 // Navigation Styles here
 .nav-container {
     max-width: 1000px;
-    // width: 100%;
     margin: 0 auto;
     border-bottom: @border; 
 
@@ -34,5 +33,34 @@
                font-size: 1.6rem; 
             }
         }
+
+        @media(max-width: 500px) {
+                margin-top: 5%;
+                div {
+                    margin-top: 0;
+                    // padding-bottom: 0;
+                }
+
+                div:first-child{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    h1 {
+                        font-size: 3rem;
+                        // font-weight: bold;
+                    }
+                }
+                div:nth-child(2){
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding-bottom: 2%;
+                    
+                }
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
     } // nav ends here
+   
 } // nav-container ends here
